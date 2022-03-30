@@ -41,3 +41,31 @@ By now I would do two versions, with/without plugin
 - Loader (without plugin) - https://codesandbox.io/s/loader-noplugin-i5bvrx 
 - Loader (with plugin) - https://codesandbox.io/s/loader-withplugins-sq8o01 
 
+## Update on React GSAP Animations (Round 2!)
+These are the four animations shown yesterday:
+- Let´s Collab - https://codesandbox.io/s/scrolltrigger-lets-collab-toggleactions-h80in8
+- Our work - desktop - https://codesandbox.io/s/our-work-on-scroll-mb4o00
+- Our work - mobile - https://codesandbox.io/s/mobile-onscroll-1e9wxk
+- Limitless creation - https://codesandbox.io/s/limitless-creation-onscroll-kb5jsz
+
+## Image optimization:
+For “Our Desktop” animations I resized the media files as follows:
+- Desktop 576x1070px
+- Tablet 371x831px
+- Mobile 340x2103px
+
+I have made several trials with anyconv, optimage.app and tinypng.com
+I upload a screenshot of images sizes (original, compressed to webp and what we are using now). For “Our work” animation, I did not include the texts (Real Estate  - Swift - Beauty Agency), I can add them if needed.
+
+I am masking this images using: clip-path inset
+You can see at the css files.
+
+For mobile I have to use a .png as it has some transparency
+
+In the demo files I am using scrollTrigger to trigger the animations once the user sees them on scroll view (we don´t want them to play out of viewport). Also if a user scrolls up and goes down again, the animation will begin again.
+Animations are now looping, timing and sequencing can be easily changed.
+
+## Next steps, working on:
+- Menu Radial Scroll Bar Interaction
+- 404
+
