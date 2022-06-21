@@ -57,8 +57,9 @@
 let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".limitless",
-        end: "+=99999",
-        toggleActions: "restart pause resume pause"
+        start: "top top",
+        end:"bottom top",
+        toggleActions: "none reset restart none", 
       }
     })
 
